@@ -118,7 +118,7 @@ jobs:
         with:
           status: ${{ job.status }}
           channel: '#alerts-build'
-          webhook-url: ${{ secrets.WEBHOOK_URL }}
+          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           message: |
             🛑 Workflow test failed 🛑:
             ${{ steps.tests.outputs.slackMessage}}
